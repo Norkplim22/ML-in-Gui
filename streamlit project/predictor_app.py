@@ -30,6 +30,18 @@ model= pickle.load(open('C:\LP4\Embedded-ML-model-into-Gui\ml\Time series dec_tr
 
 prediction(model)
 
+# Setup execution
+ml_components_dict = model(prediction)
+
+labels = ml_components_dict['labels']
+num_cols = ml_components_dict['num_cols']
+cat_cols = ml_components_dict['cat_cols']
+num_imputer = ml_components_dict['num_imputer']
+cat_imputer = ml_components_dict['cat_imputer']
+scaler = ml_components_dict['scaler']
+encoder = ml_components_dict['encoder']
+model = ml_components_dict['model']
+
 
 st.image("https://ultimahoraec.com/wp-content/uploads/2021/03/dt.common.streams.StreamServer-768x426.jpg")
 st.title("Sales predictor app")
