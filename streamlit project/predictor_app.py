@@ -26,21 +26,21 @@ def prediction(model):
     ).to_csv(model, index=False)
 
 # loading the trained model 
-model= pickle.load(open('C:\LP4\Embedded-ML-model-into-Gui\ml\Time series dec_tree_model.pkl', 'rb'))
+#model= pickle.load(open('C:\LP4\Embedded-ML-model-into-Gui\ml\Time series dec_tree_model.pkl', 'rb'))
 
-prediction(model)
+#prediction(model)
 
-# Setup execution
-ml_components_dict = model(prediction)
+# prediction execution
+#ml_components_dict = model(prediction)
 
 #labels = ml_components_dict['labels']
 #num_cols = ml_components_dict['num']
-cat_cols = ml_components_dict['cat']
+#cat_cols = ml_components_dict['cat']
 #num_imputer = ml_components_dict['num_imputer']
 #cat_imputer = ml_components_dict['cat_imputer']
 #scaler = ml_components_dict['StandardScaler']
-encoder = ml_components_dict['OneHotEncoder']
-model = ml_components_dict['model']
+#encoder = ml_components_dict['OneHotEncoder']
+#model = ml_components_dict['model']
 
 
 st.image("https://ultimahoraec.com/wp-content/uploads/2021/03/dt.common.streams.StreamServer-768x426.jpg")
