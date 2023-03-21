@@ -26,7 +26,7 @@ def prediction(model):
     ).to_csv(model, index=False)
 
 # loading the trained model 
-#model= pickle.load(open('C:\LP4\Embedded-ML-model-into-Gui\ml\Time series dec_tree_model.pkl', 'rb'))
+model= pickle.load(open('C:\LP4\ML-in-Gui\streamlit project\Time series dec_tree_model.pkl', 'rb'))
 
 #prediction(model)
 
