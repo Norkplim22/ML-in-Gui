@@ -33,13 +33,13 @@ prediction(model)
 # Setup execution
 ml_components_dict = model(prediction)
 
-labels = ml_components_dict['labels']
-num_cols = ml_components_dict['num_cols']
-cat_cols = ml_components_dict['cat_cols']
-num_imputer = ml_components_dict['num_imputer']
-cat_imputer = ml_components_dict['cat_imputer']
-scaler = ml_components_dict['scaler']
-encoder = ml_components_dict['encoder']
+#labels = ml_components_dict['labels']
+#num_cols = ml_components_dict['num']
+cat_cols = ml_components_dict['cat']
+#num_imputer = ml_components_dict['num_imputer']
+#cat_imputer = ml_components_dict['cat_imputer']
+#scaler = ml_components_dict['StandardScaler']
+encoder = ml_components_dict['OneHotEncoder']
 model = ml_components_dict['model']
 
 
